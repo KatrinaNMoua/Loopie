@@ -1,0 +1,25 @@
+
+/*-------------------------------NavBar-----------------------------------*/
+.list {
+    list-style: none;
+    margin-bottom: 1em;
+    white-space: nowrap;
+}
+
+.active {
+    text-align: left;
+    padding: .5em clamp(0px, 10vw, 150px) .5em 10px;
+    margin: 0px 10vw 0px 0px;
+    max-width: 200px;
+    border-radius: 10px;
+    background-color: #F6EDE4;
+    color: #FE8E66;
+}
+
+/*-------------------------------Burger Menu-----------------------------------*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
