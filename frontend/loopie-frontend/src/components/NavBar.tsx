@@ -9,25 +9,13 @@ function NavBar() {
   return (
     <>
       <header className={styles.header}>
-        <Hamburger
-          size={30}
-          toggled={open}
-          toggle={setOpen}
-          duration={0.8}
-          easing="ease-in-out"
-          rounded
-        />
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.active}` : styles.link
-          }
-        >
+        <Hamburger size={30} toggled={open} toggle={setOpen} ease-in rounded />
+        <NavLink to="/" className={styles.link}>
           <h1>Loopie</h1>
         </NavLink>
       </header>
       {open && (
-        <div>
+        <div className={styles.nav}>
           <nav>
             <div>
               <ul>
